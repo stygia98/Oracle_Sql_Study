@@ -1,0 +1,56 @@
+SELECT * FROM user_tables;
+SELECT * FROM all_tables;
+
+CREATE TABLE DEPT( 
+    DEPTNO  NUMBER(2)      PRIMARY KEY,
+    DNAME   VARCHAR2(14),
+    LOC     VARCHAR2(13) not null
+);
+
+DELETE FROM DEPT; --
+TRUNCATE; --
+DROP TABLE DEPT; --
+
+INSERT INTO DEPT (deptno, dname, loc) VALUES (10, 'ACCOUNTING', 'NEW YORK');
+INSERT INTO DEPT VALUES (11, 'ACCOUNTING1', 'NEW YORK1');
+INSERT INTO DEPT VALUES (12, null, 'NEW YORK');
+INSERT INTO DEPT VALUES (13, '', 'NEW YORK');
+--INSERT INTO DEPT (depyno, loc) VALUES (14, 'NEW YORK2');
+--INSERT INTO DEPT (dname, loc) VALUES ('ACCOUNTING', 'NEW YORK');
+--INSERT INTO DEPT (deptno, dname) VALUES (10, 'ACCOUNTING');
+--SELECT * FROM TAB WHERE tname = 'dept';
+
+ALTER table dept modify (
+    deptno number(4), 
+    dname varchar(30) not null
+);
+
+UPDATE dept set dname='임시값' where dname is null;
+
+
+
+--<문제> TB_CUSTOMER 테이블에 아래 데이터를 추가하라
+--CUSTOMER_CD CUSTOMER_NM MW_FLG BIRTH_DAY / PHONE_NUMBER EMAIL TOTAL_POINT REG_DTTM 
+--2017042 강원진 M 19810603                / 010-8202-8790 wjgang@navi.com 280300 20170123132432 
+--2017053 나경숙 W 19891225                / 010-4509-0043 ksna#boram.co.kr 4500 20170210180930 
+--2017108 박승대 M 19711430                / NULL sdpark@haso.com 23450 20170508203450
+
+CREATE TABLE TB_CUSTOMER (
+    CUSTOMER_CD     NUMBER(7)       PRIMARY KEY,
+    CUSTOMER_NM     CHAR(12)        not null,
+    MW_FLG          CHAR(1)         not null,
+    BIRTH_DAY       DATE            not null,
+    PHONE_NUMBER    VARCHAR2(14),
+    EMAIL           VARCHAR2(30)    not null,
+    TOTAL_POINT     NUMBER(8)       not null,
+    REG_DTTM        TIMESTAMP       not null
+);
+
+INSERT INTO TB_CUSTOMER VALUES ('2017042', '강원진', 'M', DATE '1981-06-03', '010-8202-8790', 'wjgang@navi.com', 280300, TIMESTAMP '2017-01-23 13:24:32');
+INSERT INTO TB_CUSTOMER VALUES ('2017053', '나경숙', 'W', DATE '1989-12-25', '010-4509-0043', 'ksna#boram.co.kr', 4500, TIMESTAMP '2017-02-10 18:09:30');
+INSERT INTO TB_CUSTOMER VALUES ('2017108', '박승대', 'M', DATE '1971-04-30', NULL, 'sdpark@haso.com', 23450, TIMESTAMP '2017-05-08 20:34:50');
+
+--SELECT CUSTOMER_CD, CUSTOMER_NM, MW_FLG, BIRTH_DAY, PHONE_NUMBER, EMAIL, TOTAL_POINT, TO_CHAR(REG_DTTM, 'YYYY-MM-DD HH24:MI:SS') AS REG_DTTM FROM TB_CUSTOMER;
+DESC DEPT;
+SELECT * FROM TB_CUSTOMER;
+SELECT * FROM TAB;
