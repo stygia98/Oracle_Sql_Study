@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="V_GOGEK" directorySegmentName="seg_0" id="A0BE534D-9F12-F483-6472-FC45D576FC6E">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:05:18 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<schemaObject>C1307946-FD46-20BE-0924-2018484868EA</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>881B8B96-E40B-13D0-6C6D-CB06CE530E24</segment>
+<tableSpace>4B6685DB-5218-7A62-7038-7B077D49C991</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="G_TEL" id="74FD9AD8-CE79-F111-6EAE-1842A0A208FF">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:05:18 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="G_ADDR" id="8C0D8C34-2A32-34AE-1251-2A084BE272DE">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:05:18 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="G_NAME" id="9E22831B-2C43-A9EA-A745-F906468CBF35">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:05:18 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="G_AGE" id="A4EE4A48-55A1-BE16-F330-237D5417DC06">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:05:18 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="G_CODE" id="A520A2A9-A499-4D95-7542-F167B36AEFCD">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:05:18 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_V_GOGEK_GCODE" id="35B0BEDD-C30E-807C-D2C3-3E80D7B9EA69">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:05:18 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<schemaObject>C1307946-FD46-20BE-0924-2018484868EA</schemaObject>
+<segment>A2B050A5-5875-1419-F047-D355642D3C20</segment>
+<tableSpace>4B6685DB-5218-7A62-7038-7B077D49C991</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_V_GOGEK_GCODE" id="FE9D48FA-36DE-7FA4-A011-680F5FEF1D34">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:05:19 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<segment>A2B050A5-5875-1419-F047-D355642D3C20</segment>
+<tableSpace>4B6685DB-5218-7A62-7038-7B077D49C991</tableSpace>
+<existingIndex>35B0BEDD-C30E-807C-D2C3-3E80D7B9EA69</existingIndex>
+<indexSegment>A2B050A5-5875-1419-F047-D355642D3C20</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

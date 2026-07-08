@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1EC25D3-4030-A782-718C-77697040AD29" name="employee2">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:16:03 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="empid" id="8E6DE632-2A64-C394-E159-8F71295D9DAE">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:17:00 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="empname" id="C9BCDB25-60DA-1372-3798-1FA8EED14FCE">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:17:23 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="empmail" id="BA8FFB83-A49B-E488-2695-5C0584D48F73">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:17:50 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="deptid" id="AA5DD977-DBDC-9B7B-3B98-F331278F2590">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:19:08 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5C483EF5-B985-0F9E-B0BB-6B72747D2E67" referredColumn="8EE5C5E5-FDBC-AFAB-DBFA-BCC182534D34"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3183E368-8ECD-5B7A-4F64-7D454E6819D9" name="emp_PK">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:21:16 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E6DE632-2A64-C394-E159-8F71295D9DAE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61171A3A-0555-4648-E498-D0A68416D708" name="employee2_department2_FK">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:24:01 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA5DD977-DBDC-9B7B-3B98-F331278F2590"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

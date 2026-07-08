@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FA9B3599-26C8-B19D-A4EA-5E65B736D801" name="department2">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:09:42 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="deptid" id="8EE5C5E5-FDBC-AFAB-DBFA-BCC182534D34">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:10:35 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="deptname" id="2D1D649A-7BE8-19F7-C882-84C9C3AD1192">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:13:51 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="deptloc" id="03BBD424-FE8E-83A4-B33F-C6500A2BE164">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:14:12 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="deptphone" id="F2CD1D77-E6E5-05EE-5F3E-21CC92CB5217">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:14:53 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>14 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="243D2D76-BE9F-E1B6-D5F5-8683F299D290" name="department2_PK">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:10:35 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8EE5C5E5-FDBC-AFAB-DBFA-BCC182534D34"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

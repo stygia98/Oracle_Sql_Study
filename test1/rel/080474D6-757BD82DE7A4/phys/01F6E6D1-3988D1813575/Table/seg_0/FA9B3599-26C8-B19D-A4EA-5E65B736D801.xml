@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="department2" directorySegmentName="seg_0" id="FA9B3599-26C8-B19D-A4EA-5E65B736D801">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:09:42 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="deptloc" id="03BBD424-FE8E-83A4-B33F-C6500A2BE164">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:14:12 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="deptname" id="2D1D649A-7BE8-19F7-C882-84C9C3AD1192">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:13:51 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="deptid" id="8EE5C5E5-FDBC-AFAB-DBFA-BCC182534D34">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:10:35 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="deptphone" id="F2CD1D77-E6E5-05EE-5F3E-21CC92CB5217">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:14:53 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="department2_PK" id="243D2D76-BE9F-E1B6-D5F5-8683F299D290">
+<createdBy>USER</createdBy>
+<createdTime>2026-07-08 03:10:35 UTC</createdTime>
+<ownerDesignName>test1</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>
