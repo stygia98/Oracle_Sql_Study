@@ -35,11 +35,29 @@ SELECT e.first_name,d.department_id,d.department_name
 
 SELECT * FROM departments ORDER by department_id asc;
 
+-- self join
+select * from employees;
+select e1.first_name 사원, e1.salary, e2.first_name 사수, e2.salary from employees e1, employees e2
+    where e1.manager_id = e2.employee_id;
 
+create table gradetbl(
+    grade number not null,
+    minsalary number not null,
+    maxsalary number not null,
+    constraint pk_gradetbl_grade primary key(grade)
+);
 
+insert into gradetbl values (1, 2000, 5000);
+insert into gradetbl values (2, 5001, 10000);
+insert into gradetbl values (3, 10001, 20000);
+insert into gradetbl values (4, 20001, 30000);
+insert into gradetbl values (5, 30001, 50000);
 
+select * from gradetbl;
+select e.first_name, e.salary, g.grade --, minsalary, maxsalary
+    from employees e, gradetbl g
+    where e.salary >= g.minsalary and e.salary <= g.maxsalary;
 
-
-
-
-
+select e.first_name, e.salary, g.grade
+    from employees e, gradetbl g
+    where e.salary between g.minsalary and g.maxsalary;
